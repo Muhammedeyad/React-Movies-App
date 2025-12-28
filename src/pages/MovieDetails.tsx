@@ -4,9 +4,8 @@ import { useParams } from 'react-router-dom'
 
 export const MovieDetails: React.FC = () => {
     const { id } = useParams()
-    console.log(id)
     return (
-        <div className='flex justify-center items-center mt-25'>
+        <div className='flex justify-center items-center mt-25 mb-20'>
             <div className='w-full flex px-7 md:px-20 gap-3 flex-col lg:flex-row'>
                 <div className='w-full lg:w-1/2'>
                     <img src={`https://picsum.photos/300/200?random=${id}`} alt="" className='w-full h-full' />
