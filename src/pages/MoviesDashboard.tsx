@@ -1,12 +1,19 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 export const MoviesDashboard: React.FC = () => {
+  const navigate = useNavigate()
+
+  const handleOpenDetail= (id:number)=>{
+    navigate(`/detail/${id}`)
+  }
   return (
-    <div className=' font-semibold pt-17 md:pt-20 h-screen px-4 md:px-10 flex flex-col gap-2 md:gap-10 '>
+    <div className=' font-semibold pt-17 md:pt-20 h-screen px-4 md:px-10 flex flex-col gap-7 md:gap-10 '>
       <div>
         <h3 className='text-white font-semibold md:text-2xl text-lg '>BlockBuster Movies</h3>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-10 mt-4'>
-          <div className=''>
+          <div className='cursor-pointer' onClick={()=> handleOpenDetail(1)}>
             <div className='w-full md:w-60'>
               <img src={'https://picsum.photos/300/200?random=1'} alt="" className='w-full h-full' />
             </div>

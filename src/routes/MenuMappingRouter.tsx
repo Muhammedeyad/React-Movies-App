@@ -5,7 +5,8 @@ import { AppLayout } from "../layouts/AppLayout"
 export const MenuMappingRouter = () => {
     const menus = [
         { path: "/", diplayName: "Dashboard" },
-        { path: "/cart", displayName: "Cart" }
+        { path: "/cart", displayName: "Cart" },
+        { path: "/detail/:id", displayName: "Movie Details"}
     ]
 
     return (<Routes>

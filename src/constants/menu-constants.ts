@@ -1,6 +1,7 @@
 export const menuConstants =  {
     Movie: {
         Dashboard: "/",
-        Cart: "/cart"
+        Cart: "/cart",
+        Detail: "/detail/:id"
     }
 }
