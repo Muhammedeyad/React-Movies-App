@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 
 
 export const MovieDetails: React.FC = () => {
-    const {id} = useParams()
+    const { id } = useParams()
     console.log(id)
     return (
         <div className='flex justify-center items-center mt-25'>
@@ -16,8 +16,8 @@ export const MovieDetails: React.FC = () => {
                         Natus  est, maiores dolor sint culpa ipsa repellat consequatur sit deserunt autem veniam, unde ratione distinctio ipsam? Doloribus possimus quae optio earum, explicabo libero voluptatibus modi maxime natus debitis minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos aut voluptate alias ex consequuntur voluptas corrupti tenetur eum veniam provident ut odio dignissimos, nam cum culpa ullam non. Velit.
 
                     </p>
-                    <div className='w-full flex justify-start'>
-                    <a href={`https://picsum.photos/300/200?random=${id}`}><button className='bg-red-700 text-white  p-3 rounded-2xl font-semibold mt-4 cursor-pointer hover:bg-red-800 md:w-1/4'>Watch On Netflix</button></a>
+                    <div className='w-full flex justify-start '>
+                        <a href={`https://picsum.photos/300/200?random=${id}`}><button className='bg-red-700 text-white  p-3 rounded-2xl font-semibold mt-4 cursor-pointer hover:bg-red-800  md:w-full'>Watch On Netflix</button></a>
                     </div>
                 </div>
             </div>

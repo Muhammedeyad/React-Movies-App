@@ -9,7 +9,7 @@ export const MoviesDashboard: React.FC = () => {
     navigate(`/detail/${id}`)
   }
   return (
-    <div className=' font-semibold pt-17 md:pt-20 h-screen px-4 md:px-10 flex flex-col gap-7 md:gap-10 '>
+    <div className=' font-semibold pt-17 md:pt-20 h-screen px-4 md:px-10 flex flex-col gap-7 md:gap-10 mb-60 md:mb-10'>
       <div>
         <h3 className='text-white font-semibold md:text-2xl text-lg '>BlockBuster Movies</h3>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-10 mt-4'>
